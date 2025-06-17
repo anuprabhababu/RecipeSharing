@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍲 Share Your Favorite Recipes</h1>
+    
+    <form action="/add-recipe" method="POST" class="recipe-form">
+      <input type="text" name="title" placeholder="Recipe Title" required />
+      <input type="text" name="ingredients" placeholder="Ingredients (comma-separated)" required />
+      <textarea name="instructions" placeholder="Instructions" rows="4" required></textarea>
+      <button type="submit">➕ Add Recipe</button>
+    </form>
+
+    <h2>📖 Shared Recipes</h2>
+    <div class="card-container" id="recipes"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
